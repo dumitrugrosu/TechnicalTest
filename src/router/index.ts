@@ -1,23 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import Detail from '../views/Detail.vue';
-import process from 'process';
+import Home from '../components/CardList.vue'; // Adjust the path based on your actual structure
+
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/detail/:id',
-    name: 'Detail',
-    component: Detail
-  }
+  { path: '/', component: Home },
+  // Add more routes as needed
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+  history: createWebHistory(),
+  routes,
 });
 
 export default router;
