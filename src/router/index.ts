@@ -1,9 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/CardList.vue'; // Adjust the path based on your actual structure
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import Home from '../views/Home.vue';
+import Detail from '../views/Detail.vue';
 
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   { path: '/', component: Home },
-  // Add more routes as needed
+  { path: '/detail/:id', component: Detail, props: true }, // Dynamic route for detail view
 ];
 
 const router = createRouter({
