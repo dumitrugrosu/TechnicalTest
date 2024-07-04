@@ -26,6 +26,8 @@
     border: 1px solid #ccc;
     padding: 16px;
     margin: 8px;
+    background-color: #ccc;
+    border-radius: 10px;
   }
   h3 {
     cursor: pointer;
