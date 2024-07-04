@@ -1,6 +1,7 @@
 <template>
     <div class="card">
       <h3 @click="goToDetail">{{ card.name }}</h3>
+      <p>ID: {{ card.id  }}</p>
       <p>{{ card.data ? formatData(card.data) : 'No data available' }}</p>
     </div>
   </template>
