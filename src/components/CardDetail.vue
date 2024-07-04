@@ -8,7 +8,6 @@
     <button @click="deleteCard">Delete</button>
     <router-link to="/" class="home-button">Home</router-link>
 
-    <!-- Save notification popup -->
     <div v-if="showSaveNotification" class="save-notification">
       Card has been saved!
     </div>
@@ -25,11 +24,11 @@ export default {
         id: '',
         name: '',
         data: {},
-        dataFormatted: '' // Added for formatted data display/editing
+        dataFormatted: '' 
       },
       originalCard: {},
       isModified: false,
-      showSaveNotification: false // Flag to control save notification visibility
+      showSaveNotification: false 
     };
   },
   created() {
@@ -57,9 +56,9 @@ export default {
         .then(() => {
           this.originalCard = { ...this.card };
           this.isModified = false;
-          this.showSaveNotification = true; // Show save notification
+          this.showSaveNotification = true; 
           setTimeout(() => {
-            this.showSaveNotification = false; // Hide save notification after 3 seconds
+            this.showSaveNotification = false; 
           }, 3000);
         })
         .catch(error => {

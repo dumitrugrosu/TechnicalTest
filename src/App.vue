@@ -16,7 +16,6 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-/* In App.vue or a global CSS file */
 body {
   margin: 0;
   font-family: Arial, sans-serif;

@@ -4,7 +4,7 @@ import Detail from '../views/Detail.vue';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', component: Home },
-  { path: '/detail/:id', component: Detail, props: true }, // Dynamic route for detail view
+  { path: '/detail/:id', component: Detail, props: true }, 
 ];
 
 const router = createRouter({
